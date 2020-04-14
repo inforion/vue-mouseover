@@ -1,0 +1,80 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "plugin:sonarjs/recommended",
+        "plugin:unicorn/recommended",
+        "airbnb-base"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "tsconfig.json",
+        "tsconfigRootDir": ".",
+        "sourceType": "module"
+    },
+    "processor": "disable/disable",
+    "plugins": [
+        "@typescript-eslint",
+        "disable",
+        "import",
+        "no-loops",
+        "simple-import-sort",
+        "sonarjs",
+        "unicorn"
+    ],
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts"]
+        },
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true
+            }
+        }
+    },
+    "overrides": [
+        {
+            "files": ["webpack.config.js"],
+            "env": {
+                "node": true
+            }
+        },
+        {
+            "files": ["**.js"],
+            "settings": {
+                "disable/plugins": ["@typescript-eslint"]
+            }
+        }
+    ],
+    "rules": {
+        "@typescript-eslint/no-empty-function": "error",
+        "@typescript-eslint/no-useless-constructor": "error",
+        "import/extensions": ["error", "never"],
+        "import/no-extraneous-dependencies": [
+            "error", {
+                "devDependencies": true
+            }
+        ],
+        "import/order": "off",
+        "no-loops/no-loops": "error",
+        "simple-import-sort/sort": "error",
+        "comma-dangle": ["error", "never"],
+        "eol-last": ["error", "never"],
+        "indent": ["error", 4],
+        "no-empty-function": "off",
+        "no-trailing-spaces": "error",
+        "no-useless-constructor": "off",
+        "sort-imports": "off",
+        "quotes": ["error", "single"]
+    }
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"extract-last-element.js","sourceRoot":"","sources":["extract-last-element.ts"],"names":[],"mappings":";;AAAA,SAAwB,kBAAkB,CACtC,KAAU;IAEV,IAAI,KAAK,CAAC,MAAM,KAAK,CAAC,EAAE;QACpB,MAAM,IAAI,KAAK,CAAC,6CAA6C,CAAC,CAAC;KAClE;IAED,MAAM,IAAI,GAAG,KAAK,CAAC,GAAG,EAAO,CAAC;IAC9B,OAAO,EAAE,IAAI,EAAE,IAAI,EAAE,KAAK,EAAE,CAAC;AACjC,CAAC;AATD,qCASC"}

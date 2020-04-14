@@ -1,0 +1,57 @@
+{
+  "name": "vue-mouseover",
+  "version": "1.0.0",
+  "description": "Changes Vue component data property when mouse enters or leaves HTML element",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue-directive",
+    "directive",
+    "mouse-hover"
+  ],
+  "main": "./dist/bundle.js",
+  "types": "./types/index.d.ts",
+  "files": [
+    "dist",
+    "src/**/*.ts",
+    "types"
+  ],
+  "author": "Nikolay Kudryavtsev <n.kudriavtsev@inforion.ru>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "vue": "^2.0.0"
+  },
+  "dependencies": {
+    "lodash.get": "^4.0.0",
+    "lodash.merge": "^4.0.0",
+    "lodash.topath": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash.get": "^4.4.6",
+    "@types/lodash.merge": "^4.6.6",
+    "@types/lodash.topath": "^4.5.6",
+    "@types/node": "^13.11.0",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-loader": "^4.0.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-disable": "^2.0.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-no-loops": "^0.3.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^5.0.2",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "eslint-plugin-unicorn": "^18.0.1",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "vue": "^2.0.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
