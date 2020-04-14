@@ -1,5 +1,5 @@
+syntax:glob
 .idea
 dist
 node_modules
-./src/**.js
-./src/**.map.js
+src/**/*.js
