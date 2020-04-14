@@ -2,6 +2,10 @@
   "name": "vue-mouseover",
   "version": "1.0.0",
   "description": "Changes Vue component data property when mouse enters or leaves HTML element",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inforion/vue-mouseover.git"
+  },
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
