@@ -18,5 +18,8 @@ module.exports = {
                 exclude: /node_modules|\.d\.ts$/
             }
         ]
+    },
+    externals: {
+        vue: 'commonjs vue'
     }
 };
