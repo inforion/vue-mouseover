@@ -25,7 +25,7 @@ import Mouseover from 'vue-mouseover';
 Vue.use(Mouseover);
 ```
 
-You can also pass an [options object](#Options) to the `Vue.use` call as well:
+You can also pass an [options object](#options) to the `Vue.use` call as well:
 
 ```javascript
 Vue.use(Mouseover, options);
@@ -37,7 +37,7 @@ Vue.use(Mouseover, options);
 
 `hover` will be `true` when mouse is over `<div>` and `false` otherwise.
 <br/>
-**You can customize** these default values in [options object](#Options) during setup.
+**You can customize** these default values in [options object](#options) during setup.
 
 ```javascript
 Vue.extend({
@@ -54,7 +54,7 @@ Vue.extend({
 
 `hover` will be `"foo"` when mouse is over `<div>` and `null` otherwise.
 <br/>
-**You can customize** the default `mouseleave` value in [options object](#Options) during setup.
+**You can customize** the default `mouseleave` value in [options object](#options) during setup.
 
 ```javascript
 Vue.extend({
@@ -121,13 +121,13 @@ Vue.extend({
 })
 ```
 
-It is also possible to specify only `mouseleave` value inside `v-mouseover-value` setting. The default `mouseenter` value for this case **can also be customized** in [options object](#Options) during setup.
+It is also possible to specify only `mouseleave` value inside `v-mouseover-value` setting. The default `mouseenter` value for this case **can also be customized** in [options object](#options) during setup.
 
 # Immediate value assignment
 
 **Note:** by default the data property specified in `v-mouseover` directive will be overwritten immediately after the directive is attached to the element. If mouse is over this element at the moment, `mouseenter` value will be assigned, and `mouseleave` value otherwise.
 <br/>
-You can disable this behavior in [options object](#Options) during setup.
+You can disable this behavior in [options object](#options) during setup.
 
 # Nested properties assignment
 
