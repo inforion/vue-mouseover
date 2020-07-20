@@ -1,3 +1,7 @@
+# Vue-Mouseover
+
+[![NPM version](https://img.shields.io/npm/v/vue-mouseover.svg)](https://www.npmjs.com/package/vue-mouseover)
+
 ## Description
 
 A simple Vue directive that automatically updates Vue component data with a customizable value when mouse enters or leaves HTML element it is attached to.
