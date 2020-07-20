@@ -1,8 +1,8 @@
-# Description
+## Description
 
 A simple Vue directive that automatically updates Vue component data with a customizable value when mouse enters or leaves HTML element it is attached to.
 
-# Installation
+## Installation
 
 Using NPM:
 
@@ -16,7 +16,7 @@ or using Yarn:
 yarn add vue-mouseover
 ```
 
-# Setup
+## Setup
 
 ```javascript
 import Vue from 'vue';
@@ -31,9 +31,9 @@ You can also pass an [options object](#options) to the `Vue.use` call as well:
 Vue.use(Mouseover, options);
 ```
 
-# Examples
+## Examples
 
-## Default values
+### Default values
 
 `hover` will be `true` when mouse is over `<div>` and `false` otherwise.
 <br/>
@@ -50,7 +50,7 @@ Vue.extend({
 })
 ```
 
-## Specify only `mouseenter` value
+### Specify only `mouseenter` value
 
 `hover` will be `"foo"` when mouse is over `<div>` and `null` otherwise.
 <br/>
@@ -96,7 +96,7 @@ Vue.extend({
 })
 ```
 
-## Specify `mouseenter` and `mouseleave` values
+### Specify `mouseenter` and `mouseleave` values
 
 `hover` will be `"foo"` when mouse is over `<div>` and `"bar"` otherwise.
 
@@ -123,13 +123,13 @@ Vue.extend({
 
 It is also possible to specify only `mouseleave` value inside `v-mouseover-value` setting. The default `mouseenter` value for this case **can also be customized** in [options object](#options) during setup.
 
-# Immediate value assignment
+## Immediate value assignment
 
 **Note:** by default the data property specified in `v-mouseover` directive will be overwritten immediately after the directive is attached to the element. If mouse is over this element at the moment, `mouseenter` value will be assigned, and `mouseleave` value otherwise.
 <br/>
 You can disable this behavior in [options object](#options) during setup.
 
-# Nested properties assignment
+## Nested properties assignment
 
 Value assignment behavior for nested properties was designed to be as similar to the `v-model` directive as possible. Consider the following Vue component `data` context:
 
@@ -148,7 +148,7 @@ Value assignment behavior for nested properties was designed to be as similar to
 * `a.b.missing` assignment **will fail** with error (as reactive properties should be initialized beforehand);
 * `a.b.arr.0`, `a.b.arr.2` and even `a.b.missing` will be successfully assigned with [Vue.set](https://ru.vuejs.org/v2/api/#Vue-set) method.
 
-# Options
+## Options
 
 These are all available options and their default values:
 
@@ -168,13 +168,13 @@ These are all available options and their default values:
 }
 ```
 
-# Restrictions
+## Restrictions
 
 Target language version of the bundle is ECMAScript 6. This is because of using `WeakMap` for storing event handlers.
 <br/>
 Any PRs are appreciated :)
 
-# Motivation
+## Motivation
 
 You can achieve the same effect without using this package (with some reservations):
 
