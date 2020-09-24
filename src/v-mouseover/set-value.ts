@@ -8,7 +8,7 @@ import isArray from '../utils/is-array';
 import { isObjectNonStrict } from '../utils/is-object';
 
 export default function setValue(
-    object: object,
+    object: Record<string, unknown>,
     path: string,
     value: unknown
 ): void {

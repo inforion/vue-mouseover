@@ -1,7 +1,7 @@
 import get from 'lodash.get';
 
 export default function getOrKeep(
-    object: object,
+    object: Record<string, unknown>,
     path: string[]
 ): unknown {
     return path.length === 0
