@@ -21,6 +21,9 @@ module.exports = {
             }
         ]
     },
+    resolve: {
+        extensions: ['.ts', '.js']
+    },
     externals: {
         vue: 'commonjs vue'
     }
