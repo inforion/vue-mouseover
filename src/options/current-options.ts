@@ -7,7 +7,7 @@ import defaultOptions from './default-options';
 let currentOptions = merge({}, defaultOptions);
 
 export function setOptions(options?: MouseoverOptions): void {
-    currentOptions = merge(defaultOptions, options);
+    currentOptions = merge({}, defaultOptions, options);
 }
 
 export function getOptions(): DeepReadonlyRequiredObject<MouseoverOptions> {
