@@ -1,4 +1,3 @@
-import toPath from 'lodash.topath';
 import Vue from 'vue';
 
 import { mouseoverName } from '../names';
@@ -6,13 +5,14 @@ import extractLastElement from '../utils/extract-last-element';
 import getOrKeep from '../utils/get-or-keep';
 import isArray from '../utils/is-array';
 import { isObjectNonStrict } from '../utils/is-object';
+import stringToPath from '../utils/string-to-path';
 
 export default function setValue(
     object: Record<string, unknown>,
     path: string,
     value: unknown
 ): void {
-    const pathArray = toPath(path);
+    const pathArray = stringToPath(path);
 
     if (pathArray.length === 0) {
         throw new Error(`The path provided to v-${mouseoverName} directive is empty`);
