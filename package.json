@@ -7,7 +7,8 @@
     "url": "https://github.com/inforion/vue-mouseover.git"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "vue",
