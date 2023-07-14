@@ -17,7 +17,12 @@ function updateContext(
 ): void {
     const valueDirective = findValueDirective(vNode);
     const value = chooseValue(valueDirective);
-    setValue(vNode.context.$data, binding.expression, value);
+    setValue(
+        vNode.context.$set,
+        vNode.context.$data,
+        binding.expression,
+        value
+    );
 }
 
 export function assignMouseEnterValue(

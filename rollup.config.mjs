@@ -8,15 +8,11 @@ export default {
     output: [{
         file: 'dist/bundle.js',
         format: 'umd',
-        name: 'Mouseover',
-        globals: {
-            vue: 'Vue'
-        }
+        name: 'Mouseover'
     }, {
         file: 'dist/bundle.esm.js',
         format: 'esm'
     }],
-    external: ['vue'],
     plugins: [
         nodeResolve(),
         commonjs(),
