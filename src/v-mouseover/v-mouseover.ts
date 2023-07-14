@@ -23,6 +23,10 @@ function inserted(
     vNode: VNode
 ): void {
     if (!isContextDefined(vNode) || !isExpressionDefined(binding)) {
+        console.warn(
+            'Cannot attach vue-mouseover directive to the element.',
+            'It should be used within a Vue component and point to a path of one of its data properties'
+        );
         return;
     }
 
