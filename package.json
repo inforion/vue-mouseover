@@ -7,8 +7,8 @@
     "url": "https://github.com/inforion/vue-mouseover.git"
   },
   "scripts": {
-    "prepublishOnly": "npm run build"
     "build": "rollup --config rollup.config.mjs",
+    "prepublishOnly": "yarn run build"
   },
   "keywords": [
     "vue",
