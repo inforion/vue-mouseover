@@ -8,14 +8,13 @@ export default {
         format: 'umd',
         name: 'Mouseover',
         globals: {
-            vue: 'Vue'
+            vue: 'Vue',
+            'merge-options': 'mergeOptions'
         }
     }, {
         file: 'dist/bundle.esm.js',
-        format: 'esm',
-        globals: {
-            vue: 'Vue'
-        }
+        format: 'esm'
     }],
+    external: ['vue', 'merge-options'],
     plugins: [typescript()]
 };
