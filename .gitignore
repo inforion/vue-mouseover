@@ -1,5 +1,7 @@
 syntax:glob
 .idea
 dist
-node_modules
+.pnp.*
+.yarn/*
+!.yarn/releases
 src/**/*.js
