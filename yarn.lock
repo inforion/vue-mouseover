@@ -229,13 +229,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^13.11.0":
-  version: 13.13.21
-  resolution: "@types/node@npm:13.13.21"
-  checksum: ef297717350100ddd057d99443232a4724e5e34afc7ca73959f8be59c7c7c782ab368ce01bc937829c0246995f017ed0ba0c3d13a71a13280e2ace08e95a2769
-  languageName: node
-  linkType: hard
-
 "@types/normalize-package-data@npm:^2.4.0":
   version: 2.4.0
   resolution: "@types/normalize-package-data@npm:2.4.0"
@@ -3481,7 +3474,6 @@ __metadata:
     "@rollup/plugin-commonjs": ^25.0.2
     "@rollup/plugin-node-resolve": ^15.1.0
     "@rollup/plugin-typescript": ^11.1.2
-    "@types/node": ^13.11.0
     "@typescript-eslint/eslint-plugin": ^2.26.0
     "@typescript-eslint/parser": ^2.26.0
     eslint: ^6.8.0
